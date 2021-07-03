@@ -1,0 +1,124 @@
+{% extends 'base.contactNav.html' %}
+{% block body %}
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/static/form/4.0.0/static/form/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Contact Us</title>
+ 
+  <body>
+
+
+  	<title>Contact Form </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/static/form/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="static/form/style.css">
+
+	</head>
+	<body>
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section"> <b>Contact Form</b> </h2>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-12">
+					<div class="wrapper">
+						<div class="row mb-5">
+							<div class="col-md-3">
+								<div class="dbox w-100 text-center">
+			        		<div class="icon d-flex align-items-center justify-content-center">
+			        			<span class="fa fa-map-marker"></span>
+			        		</div>
+			        		<div class="text">
+				            <p><span>Address:</span> Patna , Ram Nrishna Nagar Patna 800027</p>
+				          </div>
+			          </div>
+							</div>
+							<div class="col-md-3">
+								<div class="dbox w-100 text-center">
+			        		<div class="icon d-flex align-items-center justify-content-center">
+			        			<span class="fa fa-phone"></span>
+			        		</div>
+			        		<div class="text">
+				            <p><span>Phone:</span> <a href="tel://1234567920">+91 8229058286</a></p>
+				          </div>
+			          </div>
+							</div>
+							<div class="col-md-3">
+								<div class="dbox w-100 text-center">
+			        		<div class="icon d-flex align-items-center justify-content-center">
+			        			<span class="fa fa-paper-plane"></span>
+			        		</div>
+			        		<div class="text">
+				            <p><span>Email:</span> <a href="mailto:info@yoursite.com">apjacker7461061@gmail.com</a></p>
+				          </div>
+			          </div>
+							</div>
+							<div class="col-md-3">
+								<div class="dbox w-100 text-center">
+			        		<div class="icon d-flex align-items-center justify-content-center">
+			        			<span class="fa fa-globe"></span>
+			        		</div>
+			        		<div class="text">
+				            <p><span>Website</span> <a href="#">yoursite.com</a></p>
+				          </div>
+			          </div>
+							</div>
+						</div>
+						<div class="row no-gutters">
+							<div class="col-md-7">
+								<div class="contact-wrap w-100 p-md-5 p-4">
+								<!-- contact forms -->
+							
+<form method == 'post' action = "/contact">
+ {% csrf_token %}
+ <h1> Contact us </h1>
+	<div class="form-group">
+    <label for="name">Name</label>
+    <input type="name" class="form-control" id="name" name ="name" placeholder="Enter your name">
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email </label>
+    <input type="email" class="form-control" id="email" name ="email" placeholder="Enter your email address">
+  </div>
+
+  <div class="form-group">
+    <label for="phone">Phone no</label>
+    <input type="phone" class="form-control" id="phone no" name ='phone'placeholder="Enter your phone number">
+  </div>
+  
+  <div class="form-group">
+    <label for="message"> message</label>
+    <textarea class="form-control" id="message" name ="message" rows="3"></textarea>
+  </div>
+  <button class = "btn btn-primary" type = 'Sumbit'>Sumbit </button>
+</div>
+</form>
+
+	</div>
+		</div>
+<div class="col-md-5 d-flex align-items-stretch">
+<div class="info-wrap w-100 p-5 img" style="background-image: url(static/form/img1.png);">
+	</div>
+		</div>
+						
+	</section>
+
+	
+  </body>
+</html>
+{% endblock body %}
